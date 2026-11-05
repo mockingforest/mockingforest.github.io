@@ -190,6 +190,59 @@ html, body {
 	margin: 0;
 }
 
+/* -------------------------------------
+	Projects セクションのスタイル
+------------------------------------- */
+
+.projects-section {
+	max-width: 600px;
+	margin: 4rem auto 60px auto;
+	padding: 0 20px;
+	text-align: left;
+}
+
+.projects-section h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	letter-spacing: 2px;
+	border-bottom: 1px solid #333333;
+	padding-bottom: 8px;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.projects-intro {
+	color: #cccccc;
+	margin-bottom: 1.2rem;
+}
+
+.projects-list {
+	list-style: disc;
+	padding-left: 20px;
+	margin: 0;
+}
+
+.projects-list li {
+	margin-bottom: 0.8rem;
+	font-size: 0.95rem;
+}
+
+.projects-list a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.projects-list a:hover {
+	color: #888888;
+}
+
+.projects-desc {
+	display: block;
+	color: #aaaaaa;
+	font-size: 0.85rem;
+	margin-top: 0.2rem;
+}
+
 
 /* -------------------------------------
 	スマートフォン向けレスポンシブ対応

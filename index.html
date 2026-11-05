@@ -30,8 +30,9 @@
 				<h1>mockingforest</h1>
 			</div>
 
-			<!-- 2. コンテンツ領域（#about セクション） -->
+			<!-- 2. コンテンツ領域 -->
 			<div class="content-body">
+				<!-- About セクション -->
 				<section id="about" class="about-section">
 					<h2>About</h2>
 					<p class="about-intro">趣味と仕事で触ってきた技術の足跡。</p>
@@ -50,6 +51,19 @@
 					<p class="about-desc">
 						AIの普及で自分でゼロからコードを書く機会は減ったものの、相変わらず技術をいじるのは好き。
 					</p>
+				</section>
+
+				<!-- Projects セクション -->
+				<section id="projects" class="projects-section">
+					<h2>Projects</h2>
+					<p class="projects-intro">GitHubで公開しているリポジトリなど。</p>
+
+					<ul class="projects-list">
+						<li>
+							<a href="https://github.com/mockingforest/AutoHotkey-Toolkit" target="_blank" rel="noopener noreferrer">AutoHotkey-Toolkit</a>
+							<span class="projects-desc">AutoHotkeyを使ったマウスによるコピペ・検索・ズーム、ファイル名に日時を入れたいときに便利なショートカット、連射機能など。</span>
+						</li>
+					</ul>
 				</section>
 			</div>
 
@@ -70,17 +84,8 @@
 
 	<!-- 各メニューパーツの自動読み込み -->
 	<script>
-		// 上メニュー
-		// fetch('menu_t.html').then(r => r.text()).then(d => document.getElementById('menu-top').innerHTML = d);
-
-		// 下メニュー
-		// fetch('menu_b.html').then(r => r.text()).then(d => document.getElementById('menu-bottom').innerHTML = d);
-
 		// 左メニュー（有効化）
 		fetch('menu_l.html').then(r => r.text()).then(d => document.getElementById('menu-left').innerHTML = d);
-
-		// 右メニュー
-		// fetch('menu_r.html').then(r => r.text()).then(d => document.getElementById('menu-right').innerHTML = d);
 	</script>
 
 </body>
