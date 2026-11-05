@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Coming Soon</title>
+	<title>mockingforest</title>
 	<link rel="stylesheet" href="main.css">
 </head>
-<!-- class="centered" をつけることで中央寄せになる -->
-<body class="centered">
-	coming soon...
+
+<body class="layout-grid">
+
+	<!-- 上メニューエリア -->
+	<header id="menu-top" class="menu-area"></header>
+
+	<!-- 中央ブロック（左・メイン・右） -->
+	<div class="middle-container">
+
+		<!-- 左メニューエリア -->
+		<aside id="menu-left" class="menu-area"></aside>
+
+		<!-- メインコンテンツ -->
+		<main class="main-content">
+
+			<!-- ページの最上部起点（アンカーの着地点） -->
+			<section id="top" class="top-section"></section>
+
+			<!-- 1. 最上部のタイトルエリア -->
+			<div class="header-title-area">
+				<h1>mockingforest</h1>
+			</div>
+
+			<!-- 2. 今後コンテンツを追加していくメイン領域 -->
+			<div class="content-body">
+				<!-- 将来的にここに記事やコンテンツが入ります -->
+			</div>
+
+			<!-- 3. 最下部の coming soon... エリア -->
+			<div class="coming-soon-area">
+				<p class="sub-text">coming soon...</p>
+			</div>
+
+		</main>
+
+		<!-- 右メニューエリア -->
+		<aside id="menu-right" class="menu-area"></aside>
+
+	</div>
+
+	<!-- 下メニューエリア -->
+	<footer id="menu-bottom" class="menu-area"></footer>
+
+	<!-- 各メニューパーツの自動読み込み -->
+	<script>
+		// 上メニュー
+		// fetch('menu_t.html').then(r => r.text()).then(d => document.getElementById('menu-top').innerHTML = d);
+
+		// 下メニュー
+		// fetch('menu_b.html').then(r => r.text()).then(d => document.getElementById('menu-bottom').innerHTML = d);
+
+		// 左メニュー（有効化）
+		fetch('menu_l.html').then(r => r.text()).then(d => document.getElementById('menu-left').innerHTML = d);
+
+		// 右メニュー
+		// fetch('menu_r.html').then(r => r.text()).then(d => document.getElementById('menu-right').innerHTML = d);
+	</script>
+
 </body>
+
 </html>
