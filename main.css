@@ -138,3 +138,114 @@ html, body {
 .menu-area a:hover {
 	color: #888888;
 }
+
+/* -------------------------------------
+	About セクションのスタイル
+------------------------------------- */
+
+.about-section {
+	max-width: 600px;
+	margin: 6rem auto 60px auto;
+	padding: 0 20px;
+	text-align: left; /* 文章は読みやすいように左寄せ */
+}
+
+.about-section h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	letter-spacing: 2px;
+	border-bottom: 1px solid #333333;
+	padding-bottom: 8px;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.about-intro {
+	color: #cccccc;
+	margin-bottom: 1.5rem;
+}
+
+.tech-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1.5rem 0;
+}
+
+.tech-list li {
+	margin-bottom: 0.8rem;
+	font-size: 0.95rem;
+	color: #dddddd;
+}
+
+.tech-list strong {
+	color: #ffffff;
+	font-weight: normal;
+	margin-right: 8px;
+}
+
+.about-desc {
+	color: #aaaaaa;
+	font-size: 0.95rem;
+	line-height: 1.6;
+	margin: 0;
+}
+
+
+/* -------------------------------------
+	スマートフォン向けレスポンシブ対応
+------------------------------------- */
+
+@media screen and (max-width: 768px) {
+	/* 画面の高さを固定せず、コンテンツに合わせてスクロールできるようにする */
+	html, body {
+		height: auto;
+		min-height: 100vh;
+	}
+
+	.layout-grid {
+		height: auto;
+	}
+
+	/* 左右のサイドメニューを縦並び（ブロック表示）にする */
+	.middle-container {
+		flex-direction: column;
+		overflow: visible;
+		height: auto;
+	}
+
+	/* 左メニューの幅を画面いっぱいに広げる */
+	#menu-left:not(:empty) {
+		width: 100%;
+		height: auto;
+		border-right: none;
+		border-bottom: 1px solid #333333;
+		padding: 15px 20px;
+	}
+
+	/* 右メニューがある場合も同様 */
+	#menu-right:not(:empty) {
+		width: 100%;
+		height: auto;
+		border-left: none;
+		border-bottom: 1px solid #333333;
+		padding: 15px 20px;
+	}
+
+	/* メインコンテンツのパディングをスマホ用に調整 */
+	.main-content {
+		height: auto;
+		overflow-y: visible;
+		padding: 20px 15px;
+	}
+
+	/* タイトルの文字サイズを少しスッキリさせる */
+	.header-title-area h1 {
+		font-size: 2.2rem;
+	}
+
+	/* About セクションのタイトル上の余白もスマホ用に少し狭める */
+	.about-section {
+		margin-top: 4rem;
+		margin-bottom: 40px;
+	}
+}
