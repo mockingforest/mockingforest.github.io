@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* �S�y�[�W���ʂ̊�{�X�^�C�� */
+/* 全ページ共通の基本スタイル */
 html, body {
 	margin: 10px;
 	padding: 0px;
@@ -12,10 +12,10 @@ html, body {
 	font-size: 1rem;
 }
 
-/* �����񂹂ɂ������y�[�W��p�̃N���X */
+/* 中央寄せにしたいページ専用のクラス */
 body.centered {
 	display: flex;
-	justify-content: center;	/* ���E�̒����� */
-	align-items: center;		/* �㉺�̒����� */
+	justify-content: center;	/* 左右の中央寄せ */
+	align-items: center;		/* 上下の中央寄せ */
 	overflow: hidden;
 }
